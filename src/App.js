@@ -15,17 +15,27 @@ class App extends Component {
           <div className='row'>
             <Bug bug={'Lactobacillus'}/>
             <Bug bug={'Firmicutes'}/>
-            <Bug bug={'Bacteroidetes'}/>
+            <Bug bug={'Actinobacteria'}/>
           </div>
           <div className='row'>
-            <Bug bug={'Actinobacteria'}/>
             <Bug bug={'Proteobacteria'}/>
-            <Bug bug={'Lactobacillus'}/>
+            <Bug bug={'Bacteroides'}/>
+            <Bug bug={'Clostridium'}/>
           </div>
           <div className='row'>
-            <Bug bug={'Firmicutes'}/>
-            <Bug bug={'Bacteroidetes'}/>
-            <Bug bug={'Actinobacteria'}/>
+            <Bug bug={'Peptostreptococcus'}/>
+              <Bug bug={'Bifidobacterium'}/>
+              <Bug bug={'Escherichia'}/>
+          </div>
+          <div className='row'>
+            <Bug bug={'Saccharomyces'}/>
+            <Bug bug={'Aspergillus'}/>
+            <Bug bug={'Sclerotinia'}/>
+          </div>
+          <div className='row'>
+            <Bug bug={'Penicillium'}/>
+            <Bug bug={'Rhodotorula'}/>
+            <Bug bug={'Trametes'}/>
           </div>
         </div>
       </div>

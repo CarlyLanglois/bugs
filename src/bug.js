@@ -20,9 +20,11 @@ class Bug extends Component {
             console.log(json);
             const pages = json.query.pages;
             const pageId = Object.keys(pages)[0];
-            //const thumbnail = pages[pageId].thumbnail.source;
+            const thumbnail = pages[pageId].thumbnail;
+            if (thumbnail) {
+              this.setState({title: pages[pageId].title, thumbnail: pages[pageId].thumbnail.source});
+            }
 
-            this.setState({title: pages[pageId].title, thumbnail: pages[pageId].thumbnail.source});
           })
       })
 
@@ -45,11 +47,20 @@ class Bug extends Component {
 
   render() {
     console.log(this.state);
-    return (
-      <div className="bug-card" onClick={() => this.handleClick()}>
-        {this.state.img ? (<img src={this.state.thumbnail} alt={this.props.bug}/>) : (<div className='bug-info'>{this.state.title}<p>{this.state.description}</p></div>)}
-      </div>
-    );
+    if (this.state.img) {
+      return (
+        <div className="bug-card" onClick={() => this.handleClick()}>
+          <img src={this.state.thumbnail} alt={this.props.bug}/>
+        </div>
+      );
+    } else {
+      return (
+        <div className="bug-card-text" onClick={() => this.handleClick()}>
+          <div className='bug-info'>{this.state.title}<p>{this.state.description}</p></div>
+        </div>
+      );
+    }
+
   }
 }
 

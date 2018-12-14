@@ -51,6 +51,12 @@
   align-items: center;
 }
 
+.bug-card-text {
+  height: 300px;
+  width: 300px;
+  overflow: scroll;
+}
+
 /* img {
   flex: 1;
   border-radius: 50%;
