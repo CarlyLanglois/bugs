@@ -3,9 +3,6 @@ import Bug from './bug';
 import './App.css';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (
@@ -14,9 +11,23 @@ class App extends Component {
           <h1 className="App-title">Welcome to Bugs</h1>
           <div>Click on a bug to see more</div>
         </header>
-        <Bug bug={'Lactobacillus'}/>
-        <Bug bug={'Firmicutes'}/>
-        <Bug bug={'Bacteroidetes'}/>
+        <div className="bugs-container">
+          <div className='row'>
+            <Bug bug={'Lactobacillus'}/>
+            <Bug bug={'Firmicutes'}/>
+            <Bug bug={'Bacteroidetes'}/>
+          </div>
+          <div className='row'>
+            <Bug bug={'Actinobacteria'}/>
+            <Bug bug={'Proteobacteria'}/>
+            <Bug bug={'Lactobacillus'}/>
+          </div>
+          <div className='row'>
+            <Bug bug={'Firmicutes'}/>
+            <Bug bug={'Bacteroidetes'}/>
+            <Bug bug={'Actinobacteria'}/>
+          </div>
+        </div>
       </div>
     );
   }
