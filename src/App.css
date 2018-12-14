@@ -62,13 +62,12 @@
   border-radius: 50%;
 } */
 
-/*.bug-info {
-  height: 150px;
-  width: 150px;
-  background-color: pink;
+.bug-info {
+  height: 300px;
+  background-color: aliceblue;
 }
 
-@media (max-width: 400px) {
+/*@media (max-width: 400px) {
   .bugs-container {
     display: block;
   }
