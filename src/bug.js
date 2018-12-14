@@ -41,7 +41,6 @@ class Bug extends Component {
   }
 
   handleClick() {
-    //let title;
     this.setState({img: !this.state.img});
   }
 
@@ -56,7 +55,12 @@ class Bug extends Component {
     } else {
       return (
         <div className="bug-card-text" onClick={() => this.handleClick()}>
-          <div className='bug-info'>{this.state.title}<p>{this.state.description}</p></div>
+          <div className='bug-info'>
+            <h1>{this.state.title}</h1>
+            <p>
+              {this.state.description}
+            </p>
+          </div>
         </div>
       );
     }

@@ -9,7 +9,8 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Welcome to Bugs</h1>
-          <div>Click on a bug to see more</div>
+          <div>These are some of the most commun bacteria and fungus types in the human gut microbiome</div>
+          <div>Click on a bug to learn more from Wikipedia</div>
         </header>
         <div className="bugs-container">
           <div className='row'>
